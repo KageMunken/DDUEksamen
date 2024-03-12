@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class Movement : MonoBehaviour
 {
-    float speed = 10f;
-    float Horizontal;
-    float Vertical;
+    float speed = 3f;
 
     Rigidbody2D rb;
 
@@ -15,15 +13,10 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
-    {
-
-    }
-
     private void FixedUpdate()
     {
-        Horizontal = Input.GetAxisRaw("Horizontal");
-        Vertical = Input.GetAxisRaw("Vertical");
+        float Horizontal = Input.GetAxisRaw("Horizontal");
+        float Vertical = Input.GetAxisRaw("Vertical");
         rb.velocity = new Vector2(Horizontal, Vertical).normalized * speed;
     }
 }
