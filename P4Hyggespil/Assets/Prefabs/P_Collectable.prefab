@@ -144,3 +144,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  icon: {fileID: -110371384, guid: 731b8a8606bd19147b9db67e02b4c7a6, type: 3}
