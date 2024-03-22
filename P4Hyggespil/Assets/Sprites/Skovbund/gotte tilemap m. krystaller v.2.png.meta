@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 33215c809e6289d4ca5a6947d7835eda
+guid: d1114a9c16eaa2641a5ca91fff13c323
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Skovbund 3x3, ventre hj\xF8rne top_0"
+      name: gotte tilemap m. krystaller v.2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33d63cb895c56404c8d389487f12999f
-      internalID: -751518779
+      spriteID: d9ec2d1bbbccd84418deeb56acc06a6a
+      internalID: -1395400235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Skovbund 3x3, ventre hj\xF8rne top_1"
+      name: gotte tilemap m. krystaller v.2_1
       rect:
         serializedVersion: 2
         x: 16
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02b9dfa420ef201458d3f859e77ce18b
-      internalID: -2057166003
+      spriteID: 3d9befe346b45594e8b943f6fbec2538
+      internalID: 455980762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Skovbund 3x3, ventre hj\xF8rne top_2"
+      name: gotte tilemap m. krystaller v.2_2
       rect:
         serializedVersion: 2
         x: 32
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21911ec92a936e94ea503b491309e580
-      internalID: -975088001
+      spriteID: 9da18e7262bb00646a9c3584409a5940
+      internalID: 742545257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Skovbund 3x3, ventre hj\xF8rne top_3"
+      name: gotte tilemap m. krystaller v.2_3
       rect:
         serializedVersion: 2
         x: 0
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 557af90520f89044bbb736437181439a
-      internalID: -1146170357
+      spriteID: aa65aef0958d8944f915818b141db890
+      internalID: 347875937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Skovbund 3x3, ventre hj\xF8rne top_4"
+      name: gotte tilemap m. krystaller v.2_4
       rect:
         serializedVersion: 2
         x: 16
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 049edaa26b56d2f41ae7e63b66460264
-      internalID: -1533909579
+      spriteID: dc6b97dc27e2fae498a7a59f83b772a8
+      internalID: -1990512154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Skovbund 3x3, ventre hj\xF8rne top_5"
+      name: gotte tilemap m. krystaller v.2_5
       rect:
         serializedVersion: 2
         x: 32
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5d58165a90ede244944f7fa27f4d8fb
-      internalID: 1272777808
+      spriteID: a50183320a66d404499525215564dec6
+      internalID: -127064109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Skovbund 3x3, ventre hj\xF8rne top_6"
+      name: gotte tilemap m. krystaller v.2_6
       rect:
         serializedVersion: 2
         x: 0
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 842ca6da6f8c4694bad74a850aac908b
-      internalID: -312575319
+      spriteID: 83e197a06ce7eb8418708d901377ec2c
+      internalID: -48866582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Skovbund 3x3, ventre hj\xF8rne top_7"
+      name: gotte tilemap m. krystaller v.2_7
       rect:
         serializedVersion: 2
         x: 16
@@ -271,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1fc02e2679d3604eabc4bc6e075515b
-      internalID: 327196493
+      spriteID: 79a70fba9b7fb4746bfdf6b9c8160c90
+      internalID: -473240928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Skovbund 3x3, ventre hj\xF8rne top_8"
+      name: gotte tilemap m. krystaller v.2_8
       rect:
         serializedVersion: 2
         x: 32
@@ -292,8 +292,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 308bcf227cf6ef8499f38d39854e5c88
-      internalID: 1281743869
+      spriteID: 650f9e038b5c4804a926fd9d0d73c4cc
+      internalID: -534873740
       vertices: []
       indices: 
       edges: []
@@ -309,15 +309,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "Skovbund 3x3, ventre hj\xF8rne top_0": -751518779
-      "Skovbund 3x3, ventre hj\xF8rne top_1": -2057166003
-      "Skovbund 3x3, ventre hj\xF8rne top_2": -975088001
-      "Skovbund 3x3, ventre hj\xF8rne top_3": -1146170357
-      "Skovbund 3x3, ventre hj\xF8rne top_4": -1533909579
-      "Skovbund 3x3, ventre hj\xF8rne top_5": 1272777808
-      "Skovbund 3x3, ventre hj\xF8rne top_6": -312575319
-      "Skovbund 3x3, ventre hj\xF8rne top_7": 327196493
-      "Skovbund 3x3, ventre hj\xF8rne top_8": 1281743869
+      gotte tilemap m. krystaller v.2_0: -1395400235
+      gotte tilemap m. krystaller v.2_1: 455980762
+      gotte tilemap m. krystaller v.2_2: 742545257
+      gotte tilemap m. krystaller v.2_3: 347875937
+      gotte tilemap m. krystaller v.2_4: -1990512154
+      gotte tilemap m. krystaller v.2_5: -127064109
+      gotte tilemap m. krystaller v.2_6: -48866582
+      gotte tilemap m. krystaller v.2_7: -473240928
+      gotte tilemap m. krystaller v.2_8: -534873740
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
