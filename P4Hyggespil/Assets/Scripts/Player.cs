@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public InventoryManager inventory;
     public Inventory inventory;
+    public Inventory toolbar;
 
     private void Awake()
     {
-        inventory = new Inventory(21);
+        inventory = new Inventory(27);
+        toolbar = new Inventory(9);
     }
 
     private void Update()
@@ -34,5 +37,13 @@ public class Player : MonoBehaviour
         Item droppedItem = Instantiate(item, spawnLocation + spawnOffset, Quaternion.identity);
 
         droppedItem.rb2D.AddForce(spawnOffset * 2, ForceMode2D.Impulse);
+    }
+
+    public void DropItem(Item item, int numToDrop)
+    {
+        for (int i = 0; i < numToDrop; i++)
+        {
+            DropItem(item);
+        }
     }
 }
