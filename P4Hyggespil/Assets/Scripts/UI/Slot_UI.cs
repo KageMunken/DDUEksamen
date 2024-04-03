@@ -7,10 +7,11 @@ using TMPro;
 public class Slot_UI : MonoBehaviour
 {
     public int slotID;
+    public Inventory inventory;
+
     public Image itemIcon;
     public TextMeshProUGUI quantityText;
-
-    [SerializeField] private GameObject highlight;
+    public GameObject highlight;
 
     public void SetItem(Inventory.Slot slot)
     {
