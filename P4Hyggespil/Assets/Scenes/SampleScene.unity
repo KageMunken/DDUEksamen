@@ -8303,7 +8303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528e833cd12baad4c882c0e8abd675d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryPanel: {fileID: 0}
+  inventoryPanel: {fileID: 1093890319}
   inventoryUIs:
   - {fileID: 1169402718}
   - {fileID: 1119833144}
@@ -10135,7 +10135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c53400a8f66973d4c98d79f0879d742d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryPanel: {fileID: 0}
   inventoryName: Toolbar
   slots:
   - {fileID: 513625681}
@@ -10301,7 +10300,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c53400a8f66973d4c98d79f0879d742d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryPanel: {fileID: 1093890319}
   inventoryName: Backpack
   slots:
   - {fileID: 1633066047}
