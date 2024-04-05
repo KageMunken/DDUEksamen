@@ -27,21 +27,18 @@ public class Player : MonoBehaviour
 
         isHoverActive();
 
-        //if (!mousePos.Equals(previousMousePos) || !mouseInRange)
-        //{
-            tileManager.hoverMap.SetTile(previousMousePos, null);
+        tileManager.hoverMap.SetTile(previousMousePos, null);
 
-            if (mouseInRange)
-            {
-                tileManager.hoverMap.SetTile(mousePos, tileManager.interactableHoverTile);
-            }
-            else if (mouseInRange == false)
-            {
-                tileManager.hoverMap.SetTile(mousePos, tileManager.nonInteractableHoverTile);
-            }
+        if (mouseInRange)
+        {
+            tileManager.hoverMap.SetTile(mousePos, tileManager.interactableHoverTile);
+        }
+        else if (mouseInRange == false)
+        {
+            tileManager.hoverMap.SetTile(mousePos, tileManager.nonInteractableHoverTile);
+        }
             
             previousMousePos = mousePos;
-       // }
         
         if (Input.GetKeyDown(KeyCode.Space) && mouseInRange)
         {
@@ -56,14 +53,13 @@ public class Player : MonoBehaviour
                     {
                         tileManager.interactableMap.SetTile(mousePos,tileManager.plowedTile);
                     }
+                    else if (tileName == "Interactable" && inventoryManager.toolbar.selectedSlot.itemName == "Pickaxe")
+                    {
+                        tileManager.interactableMap.SetTile(mousePos, tileManager.plowedTile);
+                    }
                 }
             }
         }
-    }
-
-    void ChangeHoverMarker()
-    {
-
     }
 
     Vector3Int GetMousePosition()
