@@ -5,10 +5,15 @@ using UnityEngine.Tilemaps;
 
 public class TileManager : MonoBehaviour
 {
-    [SerializeField] private Tilemap interactableMap;
+    [SerializeField] public Tilemap interactableMap;
+    [SerializeField] public Tilemap hoverMap;
 
     [SerializeField] private Tile hiddenInteractableTile;
-    [SerializeField] private Tile interactedTile;
+    public Tile plowedTile;
+    public Tile interactableHoverTile;
+    public Tile nonInteractableHoverTile;
+
+    
 
     private void Start()
     {
@@ -23,23 +28,25 @@ public class TileManager : MonoBehaviour
         }
     }
 
-    public bool IsInteractable(Vector3Int position)
-    {
-        TileBase tile = interactableMap.GetTile(position);
+    
 
-        if (tile != null)
+   /* public void SetInteracted(Vector3Int position)
+    {
+        interactableMap.SetTile(position, plowedTile);
+    } */
+
+    public string GetTileName(Vector3Int mousePos)
+    {
+        if (interactableMap != null)
         {
-            if (tile.name == "Interactable")
+            TileBase tile = interactableMap.GetTile(mousePos);
+
+            if (tile != null)
             {
-                return true;
+                return tile.name;
             }
         }
 
-        return false;
-    }
-
-    public void SetInteracted(Vector3Int position)
-    {
-        interactableMap.SetTile(position, interactedTile);
+        return "";
     }
 }

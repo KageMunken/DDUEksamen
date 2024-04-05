@@ -18,6 +18,11 @@ public class Toolbar_UI : MonoBehaviour
         ChecklAlphaNumericKeys();
     }
 
+    public void SelectSlot(Slot_UI slot)
+    {
+        SelectSlot(slot.slotID);
+    }
+
     public void SelectSlot(int index)
     {
         if (toolbarSlots.Count == 9)
@@ -29,6 +34,8 @@ public class Toolbar_UI : MonoBehaviour
 
             selectedSlot = toolbarSlots[index];
             selectedSlot.SetHighlight(true);
+
+            GameManager.instance.player.inventoryManager.toolbar.SelectSlot(index); 
         }
     }
 

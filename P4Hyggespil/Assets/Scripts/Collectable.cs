@@ -8,13 +8,13 @@ public class Collectable : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Player player = collision.gameObject.GetComponent<Player>();
-        if (player)
+        if (player != null)
         {
             Item item = GetComponent<Item>();
 
             if (item != null)
             {
-                player.inventory.Add("Backpack", item);
+                player.inventoryManager.Add("Backpack", item);
                 Destroy(this.gameObject);
             }
         }

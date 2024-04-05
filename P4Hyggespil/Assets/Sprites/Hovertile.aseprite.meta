@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9ea6a83697497cc45a833225dfd731af
+guid: d47098a9b554b304f9817ffafed69da2
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638479047703763306
+  platformSettingsDirtyTick: 638479127834881375
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: HoePlaceholder
+  - name: Hovertile
     originalName: 
-    pivot: {x: 0.53333336, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 15
-      height: 15
-    spriteID: 99aa4946c1742bf4486ce40040ed03ab
+      width: 16
+      height: 16
+    spriteID: f8450689210b9c14fac15f84be091273
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,20 +144,20 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -688774955
-    name: HoePlaceholder
+    guid: -125324456
+    name: Hovertile
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: HoePlaceholder
+    - name: Hovertile
       frameIndex: 0
       cellRect:
         x: 0
         y: 0
-        width: 15
-        height: 15
-      spriteId: 99aa4946c1742bf4486ce40040ed03ab
+        width: 16
+        height: 16
+      spriteId: f8450689210b9c14fac15f84be091273
     linkedCells: []
     parentIndex: -1
   platformSettings:
