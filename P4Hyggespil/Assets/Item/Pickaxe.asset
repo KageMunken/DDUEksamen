@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08f6c25baa781ce458eb5b83e639f3e2, type: 3}
   m_Name: Pickaxe
   m_EditorClassIdentifier: 
-  itemName: item Name
-  icon: {fileID: 0}
+  itemName: Pickaxe
+  icon: {fileID: 21300000, guid: f4c67dc0c1a3fd44d8479f058965b079, type: 3}

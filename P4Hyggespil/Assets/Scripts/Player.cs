@@ -25,26 +25,12 @@ public class Player : MonoBehaviour
     {
         Vector3Int mousePos = GetMousePosition();
 
-        isHoverActive();
-
-        tileManager.hoverMap.SetTile(previousMousePos, null);
-
-        if (mouseInRange)
-        {
-            tileManager.hoverMap.SetTile(mousePos, tileManager.interactableHoverTile);
-        }
-        else if (mouseInRange == false)
-        {
-            tileManager.hoverMap.SetTile(mousePos, tileManager.nonInteractableHoverTile);
-        }
-            
-            previousMousePos = mousePos;
+        ChangeCursorTile();
         
         if (Input.GetKeyDown(KeyCode.Space) && mouseInRange)
         {
             if (tileManager != null)
             {
-
                 string tileName = tileManager.GetTileName(mousePos);
 
                 if (!string.IsNullOrWhiteSpace(tileName))
@@ -66,6 +52,26 @@ public class Player : MonoBehaviour
     {
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         return tileManager.hoverMap.WorldToCell(mousePos);
+    }
+
+    private void ChangeCursorTile()
+    {
+        Vector3Int mousePos = GetMousePosition();
+
+        isHoverActive();
+
+        tileManager.hoverMap.SetTile(previousMousePos, null);
+
+        if (mouseInRange)
+        {
+            tileManager.hoverMap.SetTile(mousePos, tileManager.interactableHoverTile);
+        }
+        else if (mouseInRange == false)
+        {
+            tileManager.hoverMap.SetTile(mousePos, tileManager.nonInteractableHoverTile);
+        }
+
+        previousMousePos = mousePos;
     }
 
     private void isHoverActive()
