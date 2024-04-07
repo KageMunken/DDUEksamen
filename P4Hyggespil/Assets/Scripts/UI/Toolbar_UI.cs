@@ -85,7 +85,5 @@ public class Toolbar_UI : MonoBehaviour
         {
             SelectSlot(8);
         }
-
-
     }
 }

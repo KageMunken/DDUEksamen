@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
     public InventoryManager inventoryManager;
     private TileManager tileManager;
+    private ItemManager itemManager;
 
     [SerializeField] private Camera cam;
 
@@ -19,6 +20,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         tileManager = GameManager.instance.tileManager;
+        itemManager = GameManager.instance.itemManager;
     }
 
     private void Update()
@@ -32,6 +34,7 @@ public class Player : MonoBehaviour
             if (tileManager != null)
             {
                 string tileName = tileManager.GetTileName(mousePos);
+                Debug.Log(inventoryManager.toolbar.selectedSlot.itemName);
 
                 if (!string.IsNullOrWhiteSpace(tileName))
                 {
@@ -39,9 +42,20 @@ public class Player : MonoBehaviour
                     {
                         tileManager.interactableMap.SetTile(mousePos,tileManager.plowedTile);
                     }
-                    else if (tileName == "Interactable" && inventoryManager.toolbar.selectedSlot.itemName == "Pickaxe")
+
+                    else if (tileName == "Sten" && inventoryManager.toolbar.selectedSlot.itemName == "Pickaxe" ||
+                        tileName == "Sten_1" && inventoryManager.toolbar.selectedSlot.itemName == "Pickaxe")
                     {
-                        tileManager.interactableMap.SetTile(mousePos, tileManager.plowedTile);
+                        tileManager.objectMap.SetTile(mousePos, null);
+                        tileManager.interactableMap.SetTile(mousePos, tileManager.hiddenInteractableTile);
+                        Instantiate(itemManager.items[2], mousePos, Quaternion.identity);
+                    }
+
+                    else if (tileName == "TræSkov" && inventoryManager.toolbar.selectedSlot.itemName == "Axe")
+                    {
+                        tileManager.objectMap.SetTile(mousePos, null);
+                        tileManager.interactableMap.SetTile(mousePos, tileManager.hiddenInteractableTile);
+                        Instantiate(itemManager.items[3], mousePos, Quaternion.identity);
                     }
                 }
             }
@@ -86,9 +100,6 @@ public class Player : MonoBehaviour
         {
             mouseInRange = false;
         }
-
-        Debug.Log(mousePlayerDistance.magnitude - 10);
-        
     }
 
     public void DropItem(Item item)
