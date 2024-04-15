@@ -16,15 +16,25 @@ public class Player : MonoBehaviour
     public Vector3 mousePos;
     public Vector3Int currentTile;
     bool mouseInRange;
+    [SerializeField] GameObject dialogueBox;
+
+    private BoxCollider2D boxCollider;
+
+    public float boxcastOffset = 1f; // Distance to cast
+    public LayerMask layerMask; // Layers to include in the cast
 
     private void Start()
     {
         tileManager = GameManager.instance.tileManager;
         itemManager = GameManager.instance.itemManager;
+
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
     private void Update()
     {
+        Boxcast();
+
         Vector3Int mousePos = GetMousePosition();
 
         ChangeCursorTile();
@@ -58,6 +68,53 @@ public class Player : MonoBehaviour
                         Instantiate(itemManager.items[3], mousePos, Quaternion.identity);
                     }
                 }
+            }
+        }
+    }
+
+    private void Boxcast()
+    {
+        if (boxCollider == null)
+            return;
+
+        Vector2 movementDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+        movementDirection.Normalize();
+
+        if (movementDirection == Vector2.zero)
+            return;
+
+        RaycastHit2D hit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0f, movementDirection, boxcastOffset, layerMask);
+
+        if (hit.collider != null)
+        {
+            Debug.Log("Hit something: " + hit.collider.name);
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (boxCollider == null)
+            return;
+
+        Vector2 movementDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+        movementDirection.Normalize();
+
+        if (movementDirection == Vector2.zero)
+            return;
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(transform.position + (Vector3)movementDirection * boxcastOffset, new Vector3(boxCollider.bounds.size.x, boxCollider.bounds.size.y, 1f));
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (collision.gameObject.CompareTag("NPC"))
+            {
+                dialogueBox.SetActive(true);
             }
         }
     }
