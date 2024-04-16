@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public ItemManager itemManager;
     public TileManager tileManager;
     public UI_Manager uiManager;
+    public DialogueManager dialogueManager;
 
     public Player player;
 
@@ -23,11 +24,12 @@ public class GameManager : MonoBehaviour
             instance = this;
         }
 
-        DontDestroyOnLoad(this.gameObject);
+       // DontDestroyOnLoad(this.gameObject);
 
         itemManager = GetComponent<ItemManager>();
         tileManager = GetComponent<TileManager>();
         uiManager = GetComponent<UI_Manager>();
+        dialogueManager = GetComponent<DialogueManager>();
 
         player = FindObjectOfType<Player>();
     }

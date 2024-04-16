@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Tilemaps;
 
 public class Player : MonoBehaviour
@@ -8,6 +9,7 @@ public class Player : MonoBehaviour
     public InventoryManager inventoryManager;
     private TileManager tileManager;
     private ItemManager itemManager;
+    private DialogueManager dialogueManager;
 
     [SerializeField] private Camera cam;
 
@@ -20,22 +22,29 @@ public class Player : MonoBehaviour
 
     private BoxCollider2D boxCollider;
 
-    public float boxcastOffset = 1f; // Distance to cast
-    public LayerMask layerMask; // Layers to include in the cast
+    public float boxcastOffset = 1f;
+    public LayerMask layerMask;
+    private Vector2 lastDirection;
 
     private void Start()
     {
         tileManager = GameManager.instance.tileManager;
         itemManager = GameManager.instance.itemManager;
+        dialogueManager = GameManager.instance.dialogueManager;
 
         boxCollider = GetComponent<BoxCollider2D>();
     }
 
     private void Update()
     {
-        Boxcast();
-
         Vector3Int mousePos = GetMousePosition();
+
+        Vector2 movementDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+        if (movementDirection != Vector2.zero)
+        {
+            lastDirection = movementDirection;
+        }
 
         ChangeCursorTile();
         
@@ -70,25 +79,29 @@ public class Player : MonoBehaviour
                 }
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Boxcast();
+            dialogueManager.StartDialogue();
+        }
     }
 
     private void Boxcast()
-    {
-        if (boxCollider == null)
-            return;
-
-        Vector2 movementDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-
-        movementDirection.Normalize();
-
-        if (movementDirection == Vector2.zero)
-            return;
-
-        RaycastHit2D hit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0f, movementDirection, boxcastOffset, layerMask);
+    { 
+        RaycastHit2D hit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0f, lastDirection, boxcastOffset, layerMask);
 
         if (hit.collider != null)
         {
             Debug.Log("Hit something: " + hit.collider.name);
+        }
+        
+        if (hit.transform.gameObject.CompareTag("NPC"))
+        {
+            dialogueManager.lines = hit.transform.gameObject.GetComponent<DialogueText>().characterLines;
+            dialogueManager.CharacterIcon.GetComponent<Image>().sprite = hit.transform.gameObject.GetComponent<DialogueText>().characterIcon;
+            dialogueManager.name = hit.transform.gameObject.GetComponent<DialogueText>().CharacterName;
+            dialogueBox.SetActive(true);
         }
     }
 
@@ -106,17 +119,6 @@ public class Player : MonoBehaviour
 
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(transform.position + (Vector3)movementDirection * boxcastOffset, new Vector3(boxCollider.bounds.size.x, boxCollider.bounds.size.y, 1f));
-    }
-
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            if (collision.gameObject.CompareTag("NPC"))
-            {
-                dialogueBox.SetActive(true);
-            }
-        }
     }
 
     Vector3Int GetMousePosition()

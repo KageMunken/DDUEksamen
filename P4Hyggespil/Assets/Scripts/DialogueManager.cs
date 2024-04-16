@@ -6,15 +6,19 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
+    public TextMeshProUGUI nameTextComponent;
     public string[] lines;
+    public string name;
     public float textSpeed;
+    public GameObject DialogueBox;
+    public GameObject CharacterIcon;
+    public GameObject CharacterName;
 
     private int index;
 
     // Start is called before the first frame update
     void Start()
     {
-        textComponent.text = string.Empty;
         StartDialogue();
     }
 
@@ -35,8 +39,11 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    void StartDialogue()
+   public void StartDialogue()
     {
+        textComponent.text = string.Empty;
+        nameTextComponent.text = string.Empty;
+        nameTextComponent.text = name;
         index = 0;
         StartCoroutine(TypeLine());
     }
@@ -60,7 +67,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            DialogueBox.SetActive(false);
         }
     }
 }
