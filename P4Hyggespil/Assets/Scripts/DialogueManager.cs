@@ -25,7 +25,7 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && GameManager.instance.player.isDialogueBoxActive == true)
         {
             if(textComponent.text == lines[index])
             {
@@ -68,6 +68,7 @@ public class DialogueManager : MonoBehaviour
         else
         {
             DialogueBox.SetActive(false);
+            GameManager.instance.player.isDialogueBoxActive = false;
         }
     }
 }

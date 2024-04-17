@@ -10,7 +10,9 @@ public class QuestManager : MonoBehaviour
     public GameObject QuestCollectibleText;
     public Sprite[] collectableImage;
     int questGoal;
-    int aquiredItems;
+    int aquiredItemsInInventory;
+    int aquiredItemsInToolbar;
+    int totalAquiredItems;
 
     int activeQuestIndex;
 
@@ -34,13 +36,10 @@ public class QuestManager : MonoBehaviour
             {
                 questGoal = 5;
                 QuestCollectibleIcon.GetComponent<Image>().sprite = collectableImage[1];
-                QuestCollectibleText.GetComponent<TMP_Text>().text = ($"{aquiredItems} / {questGoal}");
                 borgmesterQuestSetupHasRun = true;
             }
 
             BorgmesterQuest();
-            Debug.Log(aquiredItems);
-
         }
         else if (activeQuestIndex == 1)
         {
@@ -48,7 +47,7 @@ public class QuestManager : MonoBehaviour
             {
                 questGoal = 9;
                 QuestCollectibleIcon.GetComponent<Image>().sprite = collectableImage[0];
-                QuestCollectibleText.GetComponent<TMP_Text>().text = ($"{aquiredItems} / {questGoal}");
+                QuestCollectibleText.GetComponent<TMP_Text>().text = ($"{totalAquiredItems} / {questGoal}");
                 borgmesterQuestSetupHasRun = true;
             }
             KøkkenQuest();
@@ -57,8 +56,26 @@ public class QuestManager : MonoBehaviour
 
     void BorgmesterQuest()
     {
-    
-       // aquiredItems = GameManager.instance.player.itemManager.
+        for (int i = 0; i < GameManager.instance.player.inventoryManager.GetInventoryByName("Backpack").slots.Count; i++)
+        {
+            if (GameManager.instance.player.inventoryManager.GetInventoryByName("Backpack").slots[i].itemName == "Wood")
+            {
+                aquiredItemsInInventory = GameManager.instance.player.inventoryManager.GetInventoryByName("Backpack").slots[i].count;
+            }
+        }
+
+        for (int i = 0; i < GameManager.instance.player.inventoryManager.GetInventoryByName("Toolbar").slots.Count; i++)
+        {
+            if (GameManager.instance.player.inventoryManager.GetInventoryByName("Toolbar").slots[i].itemName == "Wood")
+            {
+                aquiredItemsInToolbar = GameManager.instance.player.inventoryManager.GetInventoryByName("Toolbar").slots[i].count;
+            }
+        }
+
+
+        totalAquiredItems = aquiredItemsInInventory + aquiredItemsInToolbar;
+
+        QuestCollectibleText.GetComponent<TMP_Text>().text = ($"{totalAquiredItems} / {questGoal}");
     
     }
 

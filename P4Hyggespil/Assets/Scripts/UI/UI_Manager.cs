@@ -23,7 +23,7 @@ public class UI_Manager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab) || Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             ToggleInventoryUI();
         }

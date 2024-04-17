@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
     private BoxCollider2D boxCollider;
 
     public float boxcastOffset = 1f;
+    public bool isDialogueBoxActive;
     public LayerMask layerMask;
     private Vector2 lastDirection;
 
@@ -33,6 +34,7 @@ public class Player : MonoBehaviour
         dialogueManager = GameManager.instance.dialogueManager;
 
         boxCollider = GetComponent<BoxCollider2D>();
+        isDialogueBoxActive = false;
     }
 
     private void Update()
@@ -48,7 +50,7 @@ public class Player : MonoBehaviour
 
         ChangeCursorTile();
         
-        if (Input.GetKeyDown(KeyCode.Space) && mouseInRange)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && mouseInRange)
         {
             if (tileManager != null)
             {
@@ -80,7 +82,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && isDialogueBoxActive == false)
         {
             Boxcast();
             dialogueManager.StartDialogue();
@@ -91,19 +93,19 @@ public class Player : MonoBehaviour
     { 
         RaycastHit2D hit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0f, lastDirection, boxcastOffset, layerMask);
 
-        if (hit.collider != null)
-        {
-            Debug.Log("Hit something: " + hit.collider.name);
-        }
-        
         if (hit.transform.gameObject.CompareTag("NPC"))
         {
             dialogueManager.lines = hit.transform.gameObject.GetComponent<DialogueText>().characterLines;
             dialogueManager.CharacterIcon.GetComponent<Image>().sprite = hit.transform.gameObject.GetComponent<DialogueText>().characterIcon;
             dialogueManager.name = hit.transform.gameObject.GetComponent<DialogueText>().CharacterName;
             dialogueBox.SetActive(true);
+            isDialogueBoxActive = true;
         }
-    }
+        else
+        {
+            return;
+        }
+     }
 
     private void OnDrawGizmosSelected()
     {
