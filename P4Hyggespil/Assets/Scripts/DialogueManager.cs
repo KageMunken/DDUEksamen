@@ -8,7 +8,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI textComponent;
     public TextMeshProUGUI nameTextComponent;
     public string[] lines;
-    public string name;
+    public string characterNameHolder;
     public float textSpeed;
     public GameObject DialogueBox;
     public GameObject CharacterIcon;

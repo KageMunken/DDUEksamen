@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public TileManager tileManager;
     public UI_Manager uiManager;
     public DialogueManager dialogueManager;
+    public QuestManager questManager;
 
     public Player player;
 
@@ -30,7 +31,7 @@ public class GameManager : MonoBehaviour
         tileManager = GetComponent<TileManager>();
         uiManager = GetComponent<UI_Manager>();
         dialogueManager = GetComponent<DialogueManager>();
-
+        questManager = GetComponent<QuestManager>();
         player = FindObjectOfType<Player>();
     }
 }

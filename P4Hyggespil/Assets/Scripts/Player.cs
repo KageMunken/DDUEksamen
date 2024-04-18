@@ -55,7 +55,6 @@ public class Player : MonoBehaviour
             if (tileManager != null)
             {
                 string tileName = tileManager.GetTileName(mousePos);
-                Debug.Log(inventoryManager.toolbar.selectedSlot.itemName);
 
                 if (!string.IsNullOrWhiteSpace(tileName))
                 {
@@ -105,6 +104,18 @@ public class Player : MonoBehaviour
         {
             return;
         }
+
+        if (hit.transform.gameObject.name == "Wombat Wellington" && GameManager.instance.questManager.activeQuestIndex == 0)
+        {
+            GameManager.instance.questManager.hasActiveQuest = true;
+            GameManager.instance.questManager.activeQuestIndex = 1;
+            GameManager.instance.questManager.questSetup();
+        }
+      /*  else if (hit.transform.gameObject.name == "Wombat Wellington" && GameManager.instance.questManager.activeQuestIndex == 1)
+        {
+            GameManager.instance.questManager.hasActiveQuest = false;
+            GameManager.instance.questManager.BorgmesterQuestComplete();
+        } */
      }
 
     private void OnDrawGizmosSelected()

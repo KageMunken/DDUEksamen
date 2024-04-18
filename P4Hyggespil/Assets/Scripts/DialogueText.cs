@@ -8,4 +8,6 @@ public class DialogueText : MonoBehaviour
     public string CharacterName;
     public string[] characterLines;
     public Sprite characterIcon;
+
+
 }

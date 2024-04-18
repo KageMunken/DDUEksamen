@@ -17,6 +17,15 @@ public class Collectable : MonoBehaviour
                 player.inventoryManager.Add("Backpack", item);
                 Destroy(this.gameObject);
             }
+
+            if (GameManager.instance.questManager.activeQuestIndex == 0)
+            {
+                GameManager.instance.questManager.checkForQuestItems();
+            }
+            else if (GameManager.instance.questManager.activeQuestIndex == 1)
+            {
+                GameManager.instance.questManager.checkForQuestItems();
+            }
         }
     }
 }
