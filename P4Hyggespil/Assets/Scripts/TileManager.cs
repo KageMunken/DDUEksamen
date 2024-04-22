@@ -5,20 +5,29 @@ using UnityEngine.Tilemaps;
 
 public class TileManager : MonoBehaviour
 {
-    [SerializeField] public Tilemap objectMap;
-    [SerializeField] public Tilemap interactableMap;
-    [SerializeField] public Tilemap hoverMap;
+    public Tilemap objectMap;
+    public Tilemap interactableMap;
+    public Tilemap hoverMap;
 
     public Tile hiddenInteractableTile;
     public Tile plowedTile;
     public Tile interactableHoverTile;
     public Tile nonInteractableHoverTile;
 
-    
+    private void OnLevelWasLoaded(int level)
+    {
+        objectMap = GameObject.Find("Objects").GetComponent<Tilemap>();
+        interactableMap = GameObject.Find("InteractableMap").GetComponent<Tilemap>();
+        hoverMap = GameObject.Find("HoverMap").GetComponent<Tilemap>();
+    }
 
     private void Start()
     {
-        foreach(var position in interactableMap.cellBounds.allPositionsWithin)
+        objectMap = GameObject.Find("Objects").GetComponent<Tilemap>();
+        interactableMap = GameObject.Find("InteractableMap").GetComponent<Tilemap>();
+        hoverMap = GameObject.Find("HoverMap").GetComponent<Tilemap>();
+
+        foreach (var position in interactableMap.cellBounds.allPositionsWithin)
         {
             TileBase tile = interactableMap.GetTile(position);
 

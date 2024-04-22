@@ -18,11 +18,7 @@ public class Collectable : MonoBehaviour
                 Destroy(this.gameObject);
             }
 
-            if (GameManager.instance.questManager.activeQuestIndex == 0)
-            {
-                GameManager.instance.questManager.checkForQuestItems();
-            }
-            else if (GameManager.instance.questManager.activeQuestIndex == 1)
+            if (GameManager.instance.questManager.hasActiveQuest == true)
             {
                 GameManager.instance.questManager.checkForQuestItems();
             }

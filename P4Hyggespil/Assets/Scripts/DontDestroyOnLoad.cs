@@ -9,4 +9,9 @@ public class DontDestroyOnLoad : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
+    private void OnLevelWasLoaded(int level)
+    {
+        transform.position = new Vector2(0, 0);
+    }
+
 }

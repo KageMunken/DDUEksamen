@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 3368687029293296973}
   - component: {fileID: 526335233014418574}
   - component: {fileID: 4985021822111519554}
-  - component: {fileID: 1223354547713636439}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Gul hat 1
-  m_TagString: NPC
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,7 +117,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.004969597, y: -0.17887032}
+  m_Offset: {x: 0.004969597, y: 0.012779951}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -129,23 +128,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2149582, y: 0.64225936}
+  m_Size: {x: 1.2149582, y: 1.0255599}
   m_EdgeRadius: 0
---- !u!114 &1223354547713636439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6143973593056938397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eef01954644dc545b3845fa6e7fd996, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CharacterName: Gul Hat 1
-  characterLines:
-  - Jeg siger ting, du lytter
-  - Shawab Shawab
-  - undskyld
-  characterIcon: {fileID: 21300000, guid: 99ae7f2a5edf12446964a786b64c157d, type: 3}

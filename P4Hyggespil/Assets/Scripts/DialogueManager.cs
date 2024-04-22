@@ -12,7 +12,6 @@ public class DialogueManager : MonoBehaviour
     public float textSpeed;
     public GameObject DialogueBox;
     public GameObject CharacterIcon;
-    public GameObject CharacterName;
 
     private int index;
 
@@ -43,7 +42,7 @@ public class DialogueManager : MonoBehaviour
     {
         textComponent.text = string.Empty;
         nameTextComponent.text = string.Empty;
-        nameTextComponent.text = name;
+        nameTextComponent.text = characterNameHolder;
         index = 0;
         StartCoroutine(TypeLine());
     }
