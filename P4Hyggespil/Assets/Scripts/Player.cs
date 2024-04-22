@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Camera cam;
 
     private Vector3Int previousMousePos = new Vector3Int();
-
+    
     public Vector3 mousePos;
     public Vector3Int currentTile;
     bool mouseInRange;
@@ -34,6 +34,9 @@ public class Player : MonoBehaviour
     public bool hasTalkedWithMayor;
     public LayerMask layerMask;
     private Vector2 lastDirection;
+
+    [SerializeField] Animator anim;
+    [SerializeField] SpriteRenderer spriteRenderer;
 
     private void Start()
     {
@@ -80,6 +83,7 @@ public class Player : MonoBehaviour
                     else if (tileName == "Sten" && inventoryManager.toolbar.selectedSlot.itemName == "Pickaxe" ||
                         tileName == "Sten_1" && inventoryManager.toolbar.selectedSlot.itemName == "Pickaxe")
                     {
+                        anim.SetTrigger("PickaxeAttack");
                         tileManager.objectMap.SetTile(mousePos, null);
                         tileManager.interactableMap.SetTile(mousePos, tileManager.hiddenInteractableTile);
                         Instantiate(itemManager.items[2], mousePos, Quaternion.identity);
@@ -87,6 +91,7 @@ public class Player : MonoBehaviour
 
                     else if (tileName == "TræSkov" && inventoryManager.toolbar.selectedSlot.itemName == "Axe")
                     {
+                        anim.SetTrigger("AxeAttack");
                         tileManager.objectMap.SetTile(mousePos, null);
                         tileManager.interactableMap.SetTile(mousePos, tileManager.hiddenInteractableTile);
                         Instantiate(itemManager.items[3], mousePos, Quaternion.identity);
@@ -100,6 +105,8 @@ public class Player : MonoBehaviour
             Boxcast();
             dialogueManager.StartDialogue();
         }
+
+        AnimationUpdater();
     }
 
     private void Boxcast()
@@ -219,9 +226,6 @@ public class Player : MonoBehaviour
         {
             return;
         }
-
-
-
     }
 
     private void OnDrawGizmosSelected()
@@ -296,6 +300,30 @@ public class Player : MonoBehaviour
         for (int i = 0; i < numToDrop; i++)
         {
             DropItem(item);
+        }
+    }
+
+    public void AnimationUpdater()
+    {
+        anim.SetFloat("xDir", lastDirection.x);
+        anim.SetFloat("yDir", lastDirection.y);
+
+        if(anim.GetFloat("xDir") < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else
+        {
+            spriteRenderer.flipX = false;
+        }
+
+        if(gameObject.GetComponent<Movement>().rb.velocity.magnitude != 0)
+        {
+            anim.SetBool("isMoving", true);
+        }
+        else
+        {
+            anim.SetBool("isMoving", false);
         }
     }
 }

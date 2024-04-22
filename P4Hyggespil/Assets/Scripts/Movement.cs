@@ -6,7 +6,7 @@ public class Movement : MonoBehaviour
 {
     float speed = 3f;
 
-    Rigidbody2D rb;
+   public Rigidbody2D rb;
 
     private void Start()
     {
@@ -17,6 +17,7 @@ public class Movement : MonoBehaviour
     {
         float Horizontal = Input.GetAxisRaw("Horizontal");
         float Vertical = Input.GetAxisRaw("Vertical");
+
         rb.velocity = new Vector2(Horizontal, Vertical).normalized * speed;
     }
 }
