@@ -71,7 +71,6 @@ public class QuestManager : MonoBehaviour
                     buildingChoiceResourceIcon[0].SetActive(true);
                     buildingChoiceResourceIcon[1].SetActive(true);
 
-
                     QuestCollectibleIcon[0].GetComponent<Image>().sprite = collectableImage[2];
                     QuestCollectibleIcon[1].GetComponent<Image>().sprite = collectableImage[1];
                     QuestCollectibleIcon[2].GetComponent<Image>().sprite = collectableImage[0];
