@@ -75466,6 +75466,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wombat Wellington
       objectReference: {fileID: 0}
+    - target: {fileID: 2220167327371740274, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5624770363594047361, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.74066
@@ -75508,71 +75512,110 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
       propertyPath: characterLines.Array.size
-      value: 13
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
       propertyPath: characterLines.Array.data[0]
       value: 'Greetings, esteemed stranger! I am Mayor Wombat Wellington, at your
         service. Pray tell, what name do you bear, and what path hath led thee to
-        our humble abode? '
+        our humble abode?   (He looks at you with curious eyes at first, then changes
+        his expression to a smile, acknowledging you.) '
       objectReference: {fileID: 0}
     - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
       propertyPath: characterLines.Array.data[1]
-      value: '(He looks at you with curious eyes at first, then changes his expression
-        to a smile, acknowledging you.) '
-      objectReference: {fileID: 0}
-    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
-      propertyPath: characterLines.Array.data[2]
       value: 'Ah, my apologies if our commotion disturbed thy peace. '
       objectReference: {fileID: 0}
     - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
-      propertyPath: characterLines.Array.data[3]
+      propertyPath: characterLines.Array.data[2]
       value: 'Alas, we find ourselves in a state of distress, as an earthquake of
         unparalleled magnitude ruined our beloved Wombatia Cavern. '
       objectReference: {fileID: 0}
     - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
-      propertyPath: characterLines.Array.data[4]
+      propertyPath: characterLines.Array.data[3]
       value: 'We now confront a daunting plight, compounded by our diminutive stature
         and the perils of venturing into the daylight. '
       objectReference: {fileID: 0}
     - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
+      propertyPath: characterLines.Array.data[4]
+      value: 'Our endeavors to erect a new home have been fraught with difficulty.  
+        (Wombat Wellington pauses for a second. He then looks you up and down.) '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
       propertyPath: characterLines.Array.data[5]
-      value: 'Our endeavors to erect a new home have been fraught with difficulty. '
+      value: "Methinks thou art possessed of considerable strength and competence.  
+        (Wombat Wellington stares at you with large, begging, black eyes. It\u2019s
+        impossible to tell him no.) (You nod eagerly, wishing to help the adorable
+        wombats.) "
       objectReference: {fileID: 0}
     - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
       propertyPath: characterLines.Array.data[6]
-      value: '(Wombat Wellington pauses for a second. He then looks you up and down.) '
-      objectReference: {fileID: 0}
-    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
-      propertyPath: characterLines.Array.data[7]
-      value: 'Methinks thou art possessed of considerable strength and competence. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
-      propertyPath: characterLines.Array.data[8]
-      value: "(Wombat Wellington stares at you with large, begging, black eyes. It\u2019s
-        impossible to tell him no.) "
-      objectReference: {fileID: 0}
-    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
-      propertyPath: characterLines.Array.data[9]
-      value: (You nod eagerly, wishing to help the adorable wombats.)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
-      propertyPath: characterLines.Array.data[10]
       value: 'I trust I am not overstepping bounds, but might I implore thee to extend
         in aiding us in the gathering of resources beyond our abode, that we may
         fashion anew our home? Rest assured; thy company shall be most esteemed in
-        our midst. '
+        our midst.   (You nod eagerly, wishing to help the adorable wombats.) '
       objectReference: {fileID: 0}
     - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
-      propertyPath: characterLines.Array.data[11]
-      value: '(You nod eagerly, wishing to help the adorable wombats.) '
-      objectReference: {fileID: 0}
-    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
-      propertyPath: characterLines.Array.data[12]
+      propertyPath: characterLines.Array.data[7]
       value: 'Should you desire, you are invited to acquaint yourself with my citizens.
         They are all eagerly anticipating the opportunity to extend a welcome to
         our esteemed new hero. '
       objectReference: {fileID: 0}
+    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
+      propertyPath: characterLines.Array.data[8]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
+      propertyPath: characterLines.Array.data[9]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
+      propertyPath: characterLines.Array.data[10]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
+      propertyPath: characterLines.Array.data[11]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
+      propertyPath: characterLines.Array.data[12]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
+      propertyPath: characterVoicelines.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
+      propertyPath: characterVoicelines.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: fb60f58b23b35814c8743c0a463f9bc2, type: 3}
+    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
+      propertyPath: characterVoicelines.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4438b0ffce44d38469a108c8507b9201, type: 3}
+    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
+      propertyPath: characterVoicelines.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 69affd19e604f874d9ab50d9c8930b21, type: 3}
+    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
+      propertyPath: characterVoicelines.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: f258cb5a6d530884793c2cdd17a4a812, type: 3}
+    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
+      propertyPath: characterVoicelines.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: fa3b2cfcd9c826f43a2ae0212dfa0e5b, type: 3}
+    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
+      propertyPath: characterVoicelines.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: d41ecb00b1ee071499fc008d6861f25c, type: 3}
+    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
+      propertyPath: characterVoicelines.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4574ca9cc0ac5ad418cd741b8150ca08, type: 3}
+    - target: {fileID: 7972062995513865350, guid: b13827a8797ecf34ba39d5539a54767d, type: 3}
+      propertyPath: characterVoicelines.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 65363136b8db62541805b600f56cde3a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -75593,6 +75636,7 @@ GameObject:
   m_Component:
   - component: {fileID: 368420676}
   - component: {fileID: 368420677}
+  - component: {fileID: 368420678}
   m_Layer: 0
   m_Name: "r\xE5dhus_1"
   m_TagString: Untagged
@@ -75667,6 +75711,62 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &368420678
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368420675}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5, y: 5}
+    newSize: {x: 5, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.2576704, y: 1.8827443}
+      - {x: 0.15121317, y: 2.5512161}
+      - {x: -1.228601, y: 1.9815793}
+      - {x: -1.2472472, y: 1.8618956}
+      - {x: -1.9270086, y: 1.8761077}
+      - {x: -2.5351186, y: 1.5508509}
+      - {x: -2.5051763, y: -0.25426388}
+      - {x: -2.5, y: -2.5}
+      - {x: 2.5, y: -2.5}
+      - {x: 2.540928, y: 1.5442524}
+      - {x: 1.8935938, y: 1.8860807}
+  m_UseDelaunayMesh: 0
 --- !u!1001 &416172929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75678,6 +75778,10 @@ PrefabInstance:
     - target: {fileID: 1889291850733172961, guid: 2d8217b375f088949aa9a1fa1dff6285, type: 3}
       propertyPath: m_Name
       value: Pickaxe_Collectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1889291850733172961, guid: 2d8217b375f088949aa9a1fa1dff6285, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2412376930523816708, guid: 2d8217b375f088949aa9a1fa1dff6285, type: 3}
       propertyPath: m_LocalPosition.x
@@ -75790,6 +75894,7 @@ GameObject:
   m_Component:
   - component: {fileID: 516673178}
   - component: {fileID: 516673179}
+  - component: {fileID: 516673180}
   m_Layer: 0
   m_Name: "r\xE5dhus_2"
   m_TagString: Untagged
@@ -75864,6 +75969,64 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &516673180
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516673177}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5, y: 5}
+    newSize: {x: 5, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.17466736, y: 2.5228152}
+      - {x: -1.2193389, y: 1.968533}
+      - {x: -1.2032232, y: 1.8322811}
+      - {x: -1.9365206, y: 1.8715768}
+      - {x: -2.5080528, y: 1.597002}
+      - {x: -2.5, y: -1.375}
+      - {x: -2.4375, y: -2.4375}
+      - {x: -2.4375, y: -2.5}
+      - {x: 2.5, y: -2.5}
+      - {x: 2.5322104, y: 1.5506067}
+      - {x: 1.9393148, y: 1.842176}
+      - {x: 1.3043242, y: 1.8603177}
+      - {x: 0.13571596, y: 2.548315}
+  m_UseDelaunayMesh: 0
 --- !u!1 &589968693
 GameObject:
   m_ObjectHideFlags: 0
@@ -75975,22 +76138,35 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 898698451413662442, guid: e9fba830d8f658e45a9d5c579e78c1d6, type: 3}
       propertyPath: characterLines.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 898698451413662442, guid: e9fba830d8f658e45a9d5c579e78c1d6, type: 3}
       propertyPath: characterLines.Array.data[0]
       value: "Hmm, interesting. Did you know that the chemical composition of these
-        crystal indicates a high concentration of quartz? Fascinating\u2026 "
+        crystal indicates a high concentration of quartz? Fascinating\u2026 (He seems
+        to be lost in thought, looking almost obsessively at the cave\u2019s crystals.) "
       objectReference: {fileID: 0}
     - target: {fileID: 898698451413662442, guid: e9fba830d8f658e45a9d5c579e78c1d6, type: 3}
       propertyPath: characterLines.Array.data[1]
+      value: 'We need to cook. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 898698451413662442, guid: e9fba830d8f658e45a9d5c579e78c1d6, type: 3}
+      propertyPath: characterLines.Array.data[2]
       value: "(He seems to be lost in thought, looking almost obsessively at the
         cave\u2019s crystals.) "
       objectReference: {fileID: 0}
     - target: {fileID: 898698451413662442, guid: e9fba830d8f658e45a9d5c579e78c1d6, type: 3}
-      propertyPath: characterLines.Array.data[2]
-      value: 'We need to cook. '
+      propertyPath: characterVoicelines.Array.size
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 898698451413662442, guid: e9fba830d8f658e45a9d5c579e78c1d6, type: 3}
+      propertyPath: characterVoicelines.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7773c610e76981e438d8831b75c49133, type: 3}
+    - target: {fileID: 898698451413662442, guid: e9fba830d8f658e45a9d5c579e78c1d6, type: 3}
+      propertyPath: characterVoicelines.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 75ef5fe58bec7e340a5202816ab0473b, type: 3}
     - target: {fileID: 7756529958910085168, guid: e9fba830d8f658e45a9d5c579e78c1d6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.08934
@@ -76277,6 +76453,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1136409296}
   - component: {fileID: 1136409297}
+  - component: {fileID: 1136409298}
   m_Layer: 0
   m_Name: "k\xF8kken_2"
   m_TagString: Untagged
@@ -76339,7 +76516,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: ab2ae3a6fd7d75c4ba040187d9eb9602, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -76351,6 +76528,105 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &1136409298
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136409295}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5, y: 5}
+    newSize: {x: 5, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.43740845, y: -0.06376791}
+      - {x: -0.23841095, y: 0.0674181}
+      - {x: -0.9231186, y: 0.2942667}
+      - {x: -1.0149918, y: 0.4738989}
+      - {x: -1.3306999, y: 0.49051142}
+      - {x: -1.3330956, y: -0.9295659}
+      - {x: -2.5, y: -0.875}
+      - {x: -2.5, y: -2.375}
+      - {x: -2.375, y: -2.5}
+      - {x: 2.5, y: -2.5}
+      - {x: 2.47785, y: 0.48497438}
+      - {x: 2.1434402, y: 0.473773}
+      - {x: 2.0893784, y: 0.28562212}
+      - {x: 1.8634758, y: 0.19844866}
+      - {x: 1.3085175, y: 0.0063471794}
+    - - {x: -0.875, y: -0.0625}
+      - {x: -0.8125, y: -0.125}
+      - {x: -0.5625, y: -0.1875}
+      - {x: -0.5625, y: -0.4375}
+      - {x: -0.6875, y: -0.5625}
+      - {x: -0.6875, y: -0.75}
+      - {x: -0.4375, y: -1}
+      - {x: -0.375, y: -1}
+      - {x: -0.0625, y: -0.75}
+      - {x: -0.0625, y: -0.3125}
+      - {x: 0.0625, y: -0.3125}
+      - {x: -0.0625, y: -0.4375}
+      - {x: -0.0625, y: -0.5625}
+      - {x: -0.1875, y: -0.8125}
+      - {x: 0.0625, y: -1.0625}
+      - {x: 0.125, y: -1.0625}
+      - {x: 0.1875, y: -1}
+      - {x: 0.3125, y: -1}
+      - {x: 0.5625, y: -0.8125}
+      - {x: 0.6875, y: -0.5}
+      - {x: 0.5625, y: -0.375}
+      - {x: 1, y: -0.375}
+      - {x: 1.0625, y: -0.3125}
+      - {x: 1.375, y: -0.3125}
+      - {x: 1.4375, y: -0.25}
+      - {x: 1.5625, y: -0.25}
+      - {x: 1.4375, y: -0.4375}
+      - {x: 1.4375, y: -0.5}
+      - {x: 1.5, y: -0.5625}
+      - {x: 1.4375, y: -0.6875}
+      - {x: 1.625, y: -0.875}
+      - {x: 1.875, y: -0.875}
+      - {x: 1.9375, y: -0.9375}
+      - {x: 2, y: -0.9375}
+      - {x: 1.75, y: -0.9375}
+      - {x: 1.6875, y: -0.875}
+      - {x: 1.25, y: -0.875}
+      - {x: 1.1875, y: -0.9375}
+      - {x: -0.8125, y: -0.9375}
+  m_UseDelaunayMesh: 0
 --- !u!1001 &1255808959
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76362,6 +76638,10 @@ PrefabInstance:
     - target: {fileID: 2684080907691520065, guid: dc17b02630deb194c843cc8badf94d65, type: 3}
       propertyPath: m_Name
       value: Axe_collectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 2684080907691520065, guid: dc17b02630deb194c843cc8badf94d65, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8730136173368709651, guid: dc17b02630deb194c843cc8badf94d65, type: 3}
       propertyPath: m_LocalPosition.x
@@ -76418,6 +76698,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1299131027}
   - component: {fileID: 1299131028}
+  - component: {fileID: 1299131029}
   m_Layer: 0
   m_Name: "k\xF8kken_1"
   m_TagString: Untagged
@@ -76492,6 +76773,89 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &1299131029
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299131026}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5, y: 5}
+    newSize: {x: 5, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -1.3952675, y: 0.5422964}
+      - {x: -1.3733921, y: -0.49644327}
+      - {x: -1.8749542, y: -0.49043322}
+      - {x: -2.5183792, y: -0.49987078}
+      - {x: -2.5, y: -2.5}
+      - {x: 2.5, y: -2.5}
+      - {x: 2.5, y: 0.625}
+    - - {x: -0.875, y: -0.75}
+      - {x: -0.8125, y: -0.8125}
+      - {x: -0.625, y: -0.8125}
+      - {x: -0.5, y: -0.75}
+      - {x: -0.4375, y: -0.8125}
+      - {x: -0.25, y: -0.8125}
+      - {x: -0.125, y: -0.75}
+      - {x: -0.0625, y: -0.8125}
+      - {x: 0.125, y: -0.8125}
+      - {x: 0.25, y: -0.75}
+      - {x: 0.3125, y: -0.8125}
+      - {x: 0.5, y: -0.8125}
+      - {x: 0.625, y: -0.75}
+      - {x: 0.6875, y: -0.8125}
+      - {x: 0.875, y: -0.8125}
+      - {x: 1, y: -0.75}
+      - {x: 1.0625, y: -0.8125}
+      - {x: 1.25, y: -0.8125}
+      - {x: 1.375, y: -0.75}
+      - {x: 1.4375, y: -0.8125}
+      - {x: 1.625, y: -0.8125}
+      - {x: 1.75, y: -0.75}
+      - {x: 1.8125, y: -0.8125}
+      - {x: 2, y: -0.8125}
+      - {x: 2.0625, y: -0.75}
+      - {x: 2, y: -0.9375}
+      - {x: 1.75, y: -0.9375}
+      - {x: 1.6875, y: -0.875}
+      - {x: 1.25, y: -0.875}
+      - {x: 1.1875, y: -0.9375}
+      - {x: -0.8125, y: -0.9375}
+  m_UseDelaunayMesh: 0
 --- !u!1 &1348310572
 GameObject:
   m_ObjectHideFlags: 0
@@ -76670,18 +77034,35 @@ PrefabInstance:
       value: V.V.
       objectReference: {fileID: 0}
     - target: {fileID: 4404485744238638369, guid: c433337894985b44caced142cde2a7c7, type: 3}
+      propertyPath: characterLines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404485744238638369, guid: c433337894985b44caced142cde2a7c7, type: 3}
       propertyPath: characterLines.Array.data[0]
       value: "Hey there, doll! Ya gotta be the hero everyone\u2019s been talkin\u2019
-        bout\u2019, am I right? "
+        bout\u2019, am I right? (He looks at you up and down, with an uncomfortably
+        erotic expression.) "
       objectReference: {fileID: 0}
     - target: {fileID: 4404485744238638369, guid: c433337894985b44caced142cde2a7c7, type: 3}
       propertyPath: characterLines.Array.data[1]
-      value: '(He looks at you up and down, with an uncomfortably erotic expression.) '
+      value: "Let\u2019s make some magic together, eh? Whaddaya say? "
       objectReference: {fileID: 0}
     - target: {fileID: 4404485744238638369, guid: c433337894985b44caced142cde2a7c7, type: 3}
       propertyPath: characterLines.Array.data[2]
-      value: "Let\u2019s make some magic together, eh? Whaddaya say? "
+      value: '(He looks at you up and down, with an uncomfortably erotic expression.) '
       objectReference: {fileID: 0}
+    - target: {fileID: 4404485744238638369, guid: c433337894985b44caced142cde2a7c7, type: 3}
+      propertyPath: characterVoicelines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404485744238638369, guid: c433337894985b44caced142cde2a7c7, type: 3}
+      propertyPath: characterVoicelines.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: b424316e38d9b3b4ba4ed5a514c1fce9, type: 3}
+    - target: {fileID: 4404485744238638369, guid: c433337894985b44caced142cde2a7c7, type: 3}
+      propertyPath: characterVoicelines.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: b12e06c15fbc8034fa539958f2b97281, type: 3}
     - target: {fileID: 8372031292758861320, guid: c433337894985b44caced142cde2a7c7, type: 3}
       propertyPath: m_Name
       value: VV
@@ -76764,18 +77145,36 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4018388097716001600, guid: 38fb9ad1bcd430e4faafb99246f6059a, type: 3}
+      propertyPath: characterLines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018388097716001600, guid: 38fb9ad1bcd430e4faafb99246f6059a, type: 3}
       propertyPath: characterLines.Array.data[0]
-      value: "Yo, bro! You look like you\u2019re ready to pump some iron yeaaa. "
+      value: "Yo, bro! You look like you\u2019re ready to pump some iron yeaaa. (You
+        stare at him for a second, examining him. His expression quickly changes,
+        and now he looks almost insecure) "
       objectReference: {fileID: 0}
     - target: {fileID: 4018388097716001600, guid: 38fb9ad1bcd430e4faafb99246f6059a, type: 3}
       propertyPath: characterLines.Array.data[1]
+      value: "Bro what\u2019s wrong with you. Bro do you do you even lift bro? "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018388097716001600, guid: 38fb9ad1bcd430e4faafb99246f6059a, type: 3}
+      propertyPath: characterLines.Array.data[2]
       value: '(You stare at him for a second, examining him. His expression quickly
         changes, and now he looks almost insecure) '
       objectReference: {fileID: 0}
     - target: {fileID: 4018388097716001600, guid: 38fb9ad1bcd430e4faafb99246f6059a, type: 3}
-      propertyPath: characterLines.Array.data[2]
-      value: "Bro what\u2019s wrong with you. Bro do you do you even lift bro? "
+      propertyPath: characterVoicelines.Array.size
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4018388097716001600, guid: 38fb9ad1bcd430e4faafb99246f6059a, type: 3}
+      propertyPath: characterVoicelines.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 64234796eb4697a4d97b89c7ceeefa8f, type: 3}
+    - target: {fileID: 4018388097716001600, guid: 38fb9ad1bcd430e4faafb99246f6059a, type: 3}
+      propertyPath: characterVoicelines.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 23daf512af1c3ad4dafa87419298a855, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -91363,21 +91762,34 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5503821839683388083, guid: c2a862e765ec1454cb682806b8075f8c, type: 3}
       propertyPath: characterLines.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5503821839683388083, guid: c2a862e765ec1454cb682806b8075f8c, type: 3}
       propertyPath: characterLines.Array.data[0]
       value: "Right, listen up! If you\u2019re not going to lend a hand, then get
-        your shit together! No lazing about allowed, understood? "
+        your shit together! No lazing about allowed, understood? (He looks very tense,
+        almost like he is about to explode) "
       objectReference: {fileID: 0}
     - target: {fileID: 5503821839683388083, guid: c2a862e765ec1454cb682806b8075f8c, type: 3}
       propertyPath: characterLines.Array.data[1]
-      value: '(He looks very tense, almost like he is about to explode) '
+      value: 'What are you? An idiot sandwich?! '
       objectReference: {fileID: 0}
     - target: {fileID: 5503821839683388083, guid: c2a862e765ec1454cb682806b8075f8c, type: 3}
       propertyPath: characterLines.Array.data[2]
-      value: 'What are you? An idiot sandwich?! '
+      value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5503821839683388083, guid: c2a862e765ec1454cb682806b8075f8c, type: 3}
+      propertyPath: characterVoicelines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503821839683388083, guid: c2a862e765ec1454cb682806b8075f8c, type: 3}
+      propertyPath: characterVoicelines.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9c5057cb8d0f4d840871e4bbc32ef031, type: 3}
+    - target: {fileID: 5503821839683388083, guid: c2a862e765ec1454cb682806b8075f8c, type: 3}
+      propertyPath: characterVoicelines.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: cd90f562bdf257548beb8d9cf262646c, type: 3}
     - target: {fileID: 5714718680500113319, guid: c2a862e765ec1454cb682806b8075f8c, type: 3}
       propertyPath: m_Name
       value: Wombat Wilfred
@@ -91443,6 +91855,14 @@ PrefabInstance:
       propertyPath: characterLines.Array.data[0]
       value: 'We are here for business only. Need something built, talk with me. '
       objectReference: {fileID: 0}
+    - target: {fileID: 2718944634989857234, guid: 914b6f22ce9f1cf4083273d32b0b220f, type: 3}
+      propertyPath: characterVoicelines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2718944634989857234, guid: 914b6f22ce9f1cf4083273d32b0b220f, type: 3}
+      propertyPath: characterVoicelines.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 88bd3d8da9899604aa1d26ff0bb79a27, type: 3}
     - target: {fileID: 7138211139753993169, guid: 914b6f22ce9f1cf4083273d32b0b220f, type: 3}
       propertyPath: m_Name
       value: Wombat Wally
@@ -91660,24 +92080,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9065170607040406662, guid: 876e7e00c54dd2d4cabeee1d92ee55fa, type: 3}
       propertyPath: characterLines.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9065170607040406662, guid: 876e7e00c54dd2d4cabeee1d92ee55fa, type: 3}
       propertyPath: characterLines.Array.data[0]
       value: "Hey don\u2019t mind me. I\u2019m just\u2026 uh\u2026 observing. Yeah,
-        that\u2019s it.  "
+        that\u2019s it.  (He\u2019s staring into the cavern wall and seems to be
+        in his own thoughts.) "
       objectReference: {fileID: 0}
     - target: {fileID: 9065170607040406662, guid: 876e7e00c54dd2d4cabeee1d92ee55fa, type: 3}
       propertyPath: characterLines.Array.data[1]
-      value: "(He\u2019s staring into the cavern wall and seems to be in his own
-        thoughts.) "
-      objectReference: {fileID: 0}
-    - target: {fileID: 9065170607040406662, guid: 876e7e00c54dd2d4cabeee1d92ee55fa, type: 3}
-      propertyPath: characterLines.Array.data[2]
       value: "Listen, man, they\u2019re all in on it! They're hiding the truth from
         us, I'm telling ya. The real story's right in front of our noses, but they
         want us blind to it! Wake up, sheeple! "
       objectReference: {fileID: 0}
+    - target: {fileID: 9065170607040406662, guid: 876e7e00c54dd2d4cabeee1d92ee55fa, type: 3}
+      propertyPath: characterLines.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9065170607040406662, guid: 876e7e00c54dd2d4cabeee1d92ee55fa, type: 3}
+      propertyPath: characterVoicelines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9065170607040406662, guid: 876e7e00c54dd2d4cabeee1d92ee55fa, type: 3}
+      propertyPath: characterVoicelines.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2370fced50aa35248a17aad4b2994e35, type: 3}
+    - target: {fileID: 9065170607040406662, guid: 876e7e00c54dd2d4cabeee1d92ee55fa, type: 3}
+      propertyPath: characterVoicelines.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 36f25db1c99be974db6c2e2235c22b33, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -91737,21 +92169,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7929147862695608557, guid: be287d534474b0f45a92e501f582df71, type: 3}
       propertyPath: characterLines.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7929147862695608557, guid: be287d534474b0f45a92e501f582df71, type: 3}
       propertyPath: characterLines.Array.data[0]
       value: 'Ah, greetings, my esteemed associate. If you need direction, you find
-        yourself in interesting company.  '
+        yourself in interesting company.  (His energy is weird, and he seems untrustworthy.) '
       objectReference: {fileID: 0}
     - target: {fileID: 7929147862695608557, guid: be287d534474b0f45a92e501f582df71, type: 3}
       propertyPath: characterLines.Array.data[1]
-      value: '(His energy is weird, and he seems untrustworthy.) '
+      value: "You know\u2026 I have to return some videotapes. "
       objectReference: {fileID: 0}
     - target: {fileID: 7929147862695608557, guid: be287d534474b0f45a92e501f582df71, type: 3}
       propertyPath: characterLines.Array.data[2]
-      value: "You know\u2026 I have to return some videotapes. "
+      value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7929147862695608557, guid: be287d534474b0f45a92e501f582df71, type: 3}
+      propertyPath: characterVoicelines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929147862695608557, guid: be287d534474b0f45a92e501f582df71, type: 3}
+      propertyPath: characterVoicelines.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 15415e92d63169b4aa1473b9043e8bb4, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -91936,6 +92376,18 @@ PrefabInstance:
       value: "That\u2019s, like, so totally awesome! I can\u2019t wait to, like,
         show you around! "
       objectReference: {fileID: 0}
+    - target: {fileID: 7472137226194063215, guid: 2f05daf311552ed45bbec04f22dd8b73, type: 3}
+      propertyPath: characterVoicelines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7472137226194063215, guid: 2f05daf311552ed45bbec04f22dd8b73, type: 3}
+      propertyPath: characterVoicelines.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2df4ae7c6de9af44495840b5a2a115ca, type: 3}
+    - target: {fileID: 7472137226194063215, guid: 2f05daf311552ed45bbec04f22dd8b73, type: 3}
+      propertyPath: characterVoicelines.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: de9bbb5a7069219459024f6cc2c23cb4, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

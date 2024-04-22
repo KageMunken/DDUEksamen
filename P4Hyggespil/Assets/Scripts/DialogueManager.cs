@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI textComponent;
     public TextMeshProUGUI nameTextComponent;
     public string[] lines;
+    public AudioClip[] voiceLines;
     public string characterNameHolder;
     public float textSpeed;
     public GameObject DialogueBox;
@@ -44,6 +45,8 @@ public class DialogueManager : MonoBehaviour
         nameTextComponent.text = string.Empty;
         nameTextComponent.text = characterNameHolder;
         index = 0;
+        DialogueBox.GetComponent<AudioSource>().clip = voiceLines[index];
+        DialogueBox.GetComponent<AudioSource>().Play();
         StartCoroutine(TypeLine());
     }
 
@@ -62,6 +65,8 @@ public class DialogueManager : MonoBehaviour
         {
             index++;
             textComponent.text = string.Empty;
+            DialogueBox.GetComponent<AudioSource>().clip = voiceLines[index];
+            DialogueBox.GetComponent<AudioSource>().Play();
             StartCoroutine(TypeLine());
         }
         else

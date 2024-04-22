@@ -4,9 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Tilemaps;
 using TMPro;
-using TMPro.EditorUtilities;
-using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
 
 public class Player : MonoBehaviour
 {
@@ -28,6 +25,7 @@ public class Player : MonoBehaviour
     
 
     private BoxCollider2D boxCollider;
+    public AudioSource Audio;
 
     public float boxcastOffset = 1f;
     public bool isDialogueBoxActive;
@@ -37,6 +35,16 @@ public class Player : MonoBehaviour
 
     [SerializeField] Animator anim;
     [SerializeField] SpriteRenderer spriteRenderer;
+
+    public AudioClip[] PlayerSounds;
+
+    [SerializeField] AudioClip[] BorgmesetLyd1;
+    [SerializeField] AudioClip[] BorgmesetLyd2;
+    [SerializeField] AudioClip[] BorgmesetLyd3;
+
+    [SerializeField] AudioClip[] WilfredLyd1;
+    [SerializeField] AudioClip[] WilfredLyd2;
+    [SerializeField] AudioClip[] WilfredLyd3;
 
     private void Start()
     {
@@ -74,15 +82,12 @@ public class Player : MonoBehaviour
                 string tileName = tileManager.GetTileName(mousePos);
 
                 if (!string.IsNullOrWhiteSpace(tileName))
-                {
-                    if (tileName == "Interactable" && inventoryManager.toolbar.selectedSlot.itemName == "Hoe")
-                    {
-                        tileManager.interactableMap.SetTile(mousePos,tileManager.plowedTile);
-                    }
-
-                    else if (tileName == "Sten" && inventoryManager.toolbar.selectedSlot.itemName == "Pickaxe" ||
+                { 
+                    if (tileName == "Sten" && inventoryManager.toolbar.selectedSlot.itemName == "Pickaxe" ||
                         tileName == "Sten_1" && inventoryManager.toolbar.selectedSlot.itemName == "Pickaxe")
                     {
+                        Audio.clip = PlayerSounds[1];
+                        Audio.Play();
                         anim.SetTrigger("PickaxeAttack");
                         tileManager.objectMap.SetTile(mousePos, null);
                         tileManager.interactableMap.SetTile(mousePos, tileManager.hiddenInteractableTile);
@@ -91,6 +96,8 @@ public class Player : MonoBehaviour
 
                     else if (tileName == "TræSkov" && inventoryManager.toolbar.selectedSlot.itemName == "Axe")
                     {
+                        Audio.clip = PlayerSounds[1];
+                        Audio.Play();
                         anim.SetTrigger("AxeAttack");
                         tileManager.objectMap.SetTile(mousePos, null);
                         tileManager.interactableMap.SetTile(mousePos, tileManager.hiddenInteractableTile);
@@ -139,6 +146,7 @@ public class Player : MonoBehaviour
 
                 "Now, without further ado, I bid you to gather the required ten logs and five stones and may fortune favor your endeavors."
                 };
+            hit.transform.gameObject.GetComponent<DialogueText>().characterVoicelines = BorgmesetLyd1;
                 GameManager.instance.questManager.activeQuestIndex = 1;
                 GameManager.instance.questManager.questSetup();
             }
@@ -162,7 +170,8 @@ public class Player : MonoBehaviour
 
                                "We dare to hope that your benevolence knows no bounds, as our esteemed cook Wombat Wilfred, desires the establishment of a kitchen facility, so that we may once again savor delectable cuisine."
                            };
-            }
+            hit.transform.gameObject.GetComponent<DialogueText>().characterVoicelines = BorgmesetLyd2;
+        }
             else if (hit.transform.gameObject.name == "Wombat Wellington" && GameManager.instance.questManager.rådhus2Selected == true)
             {
                 hit.transform.gameObject.GetComponent<DialogueText>().characterLines = new string[]
@@ -173,7 +182,8 @@ public class Player : MonoBehaviour
 
                                "We dare to hope that your benevolence knows no bounds, as our esteemed cook Wombat Wilfred, desires the establishment of a kitchen facility, so that we may once again savor delectable cuisine."
                            };
-            }
+            hit.transform.gameObject.GetComponent<DialogueText>().characterVoicelines = BorgmesetLyd3;
+        }
 
             if(hit.transform.gameObject.name == "Wombat Wilfred" && GameManager.instance.questManager.activeQuestIndex == 2)
             {
@@ -182,7 +192,9 @@ public class Player : MonoBehaviour
                     "Alright, we need 15 pieces of wood and 8 stones to get this kitchen going. Lots of materials for lots of space.",
 
                     "Hurry out! I need some good fucking food, don’t just stand there like a big fucking muffin."
+
                 };
+            hit.transform.gameObject.GetComponent<DialogueText>().characterVoicelines = WilfredLyd1;
             GameManager.instance.questManager.activeQuestIndex = 3;
             GameManager.instance.questManager.questSetup();
             }
@@ -202,7 +214,8 @@ public class Player : MonoBehaviour
 
                     "Thanks for the help chap."
                 };
-            }
+            hit.transform.gameObject.GetComponent<DialogueText>().characterVoicelines = WilfredLyd2;
+        }
             else if (hit.transform.gameObject.name == "Wombat Wilfred" && GameManager.instance.questManager.køkken2Selected == true)
             {
                 hit.transform.gameObject.GetComponent<DialogueText>().characterLines = new string[]
@@ -211,12 +224,14 @@ public class Player : MonoBehaviour
 
                     "It’ll do, thanks for the help chap."
                 };
-            }
+            hit.transform.gameObject.GetComponent<DialogueText>().characterVoicelines = WilfredLyd3;
+        }
 
 
         if (hit.transform.gameObject.CompareTag("NPC"))
         {
             dialogueManager.lines = hit.transform.gameObject.GetComponent<DialogueText>().characterLines;
+            dialogueManager.voiceLines = hit.transform.gameObject.GetComponent<DialogueText>().characterVoicelines;
             dialogueManager.CharacterIcon.GetComponent<Image>().sprite = hit.transform.gameObject.GetComponent<DialogueText>().characterIcon;
             dialogueManager.characterNameHolder = hit.transform.gameObject.GetComponent<DialogueText>().CharacterName;
             dialogueBox.SetActive(true);
@@ -325,5 +340,11 @@ public class Player : MonoBehaviour
         {
             anim.SetBool("isMoving", false);
         }
+    }
+
+    public void PlayCompletionSound()
+    {
+        Audio.clip = PlayerSounds[3];
+        Audio.Play();
     }
 }

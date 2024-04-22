@@ -64,7 +64,7 @@ public class QuestManager : MonoBehaviour
             case 1:
                 hasActiveQuest = true;
                     numberOfObjectivesInQuest = 2;
-                    questGoals = new int[] {1, 2};
+                    questGoals = new int[] {10, 5};
                     QuestCollectibleIcon[0].SetActive(true);
                     QuestCollectibleIcon[1].SetActive(true);
 
@@ -99,7 +99,7 @@ public class QuestManager : MonoBehaviour
             case 3:
                 hasActiveQuest = true;
                 numberOfObjectivesInQuest = 2;
-                questGoals = new int[] { 2, 1 };
+                questGoals = new int[] { 15, 8 };
                 QuestCollectibleIcon[0].SetActive(true);
                 QuestCollectibleIcon[1].SetActive(true);
 

@@ -26,6 +26,8 @@ public class UI_Manager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             ToggleInventoryUI();
+            GameManager.instance.player.Audio.clip = GameManager.instance.player.PlayerSounds[2];
+            GameManager.instance.player.Audio.Play();
         }
 
         if (Input.GetKey(KeyCode.LeftShift))
